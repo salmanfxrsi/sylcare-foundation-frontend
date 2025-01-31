@@ -10,7 +10,7 @@ import SectionTitle from "../../../components/SectionTitle";
 const FoundingCouncilShowcase = () => {
   return (
     <>
-      <SectionTitle title="Commentary of the Founding Council"></SectionTitle>
+      <SectionTitle title="Insights from the Founding Council"></SectionTitle>
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         <div>
           <SwiperSlide>

@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-neutral pb-4">
-        <footer className="footer sm:footer-horizontal text-neutral-content p-10 container mx-auto">
+      <div className="bg-linear-to-b from-white to-[#9FDD3E] pb-4">
+        <footer className="footer sm:footer-horizontal text-gray-600 p-10 container mx-auto">
           <aside>
             <img className="w-16" src="/favicon.png" alt="" />
             <p>
@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
           </aside>
           <nav>
-            <h6 className="text-white text-lg font-bold uppercase mb-1">
+            <h6 className="text-gray-600 text-lg font-bold uppercase mb-1">
               Social
             </h6>
             <div className="flex items-center gap-2">

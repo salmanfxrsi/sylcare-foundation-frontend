@@ -1,7 +1,7 @@
 const FoundingCouncilShowcaseCard = () => {
   return (
-    <div className="p-16 rounded-xl bg-green-500 mx-6 cursor-grab">
-      <p className="text-white font-black">
+    <div className="p-16 rounded-xl bg-linear-to-b from-white to-[#9FDD3E] mx-6 cursor-grab">
+      <p className="text-gray-600 font-medium font-sans">
         CURE is a grassroots organization promoting community resilience and
         empowerment through education, advocacy, and support, aiming to create a
         more equitable and compassionate world for all members.CURE is a
@@ -27,8 +27,8 @@ const FoundingCouncilShowcaseCard = () => {
         </div>
         {/* Volunteer Identity */}
         <div>
-          <h1 className="text-white font-bold">Shimul Talukdar</h1>
-          <h5 className="text-white font-medium">Chairman And Founder</h5>
+          <h1 className="text-gray-600 font-bold">Shimul Talukdar</h1>
+          <h5 className="text-gray-600 font-medium">Chairman And Founder</h5>
         </div>
       </div>
     </div>
