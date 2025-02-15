@@ -1,4 +1,8 @@
-const FoundingCouncilShowcaseCard = () => {
+import PropTypes from "prop-types";
+
+const FoundingCouncilShowcaseCard = ({ volunteer }) => {
+  const { name, image, position } = volunteer;
+
   return (
     <div className="p-8 lg:p-16 rounded-xl bg-linear-to-b from-white to-[#9FDD3E] mx-6 cursor-grab">
       <p className="text-gray-600 font-medium font-sans">
@@ -13,20 +17,20 @@ const FoundingCouncilShowcaseCard = () => {
       <div className="flex items-center gap-3 mt-6 justify-center">
         {/* Volunteer Image */}
         <div>
-          <img
-            className="w-12 h-12 rounded-full"
-            src="https://i.ibb.co.com/Vw70WRg/c0995056-b062-4ffe-b751-699219e5630f.jpg"
-            alt=""
-          />
+          <img className="w-12 h-12 rounded-full" src={image ? image : "https://i.ibb.co.com/vvK7vk5Z/no-dp-mood-off-9.jpg"} alt="" />
         </div>
         {/* Volunteer Identity */}
         <div>
-          <h1 className="text-gray-600 font-bold">Shimul Talukdar</h1>
-          <h5 className="text-gray-600 font-medium">Chairman And Founder</h5>
+          <h1 className="text-gray-600 font-bold">{name}</h1>
+          <h5 className="text-gray-600 font-medium">{position}</h5>
         </div>
       </div>
     </div>
   );
+};
+
+FoundingCouncilShowcaseCard.propTypes = {
+  volunteer: PropTypes.array,
 };
 
 export default FoundingCouncilShowcaseCard;

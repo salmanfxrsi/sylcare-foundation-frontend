@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       {/* Our Work Categories */}
-      <div className="w-11/12 lg:container mx-auto my-24">
+      <div className="w-11/12 lg:container mx-auto my-24 flex justify-center">
         <OurWorkCategories></OurWorkCategories>
       </div>
       {/* About Us */}

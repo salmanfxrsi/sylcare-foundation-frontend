@@ -6,7 +6,7 @@ import WorkCategoryCard from "./WorkCategoryCard";
 
 const OurWorkCategories = () => {
   return (
-    <div className="flex justify-center gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center gap-6 ">
       <WorkCategoryCard
         image={clean}
         name="Clean And Recycle"
