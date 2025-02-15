@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="footer sm:footer-horizontal text-gray-600 p-10 container mx-auto">
           <aside>
             <img className="w-16" src="/favicon.png" alt="" />
-            <p>
+            <div>
               <h3 to="/" className="font-black lg:text-2xl uppercase">
                 SYLCARE Foundation
               </h3>
@@ -18,17 +18,17 @@ const Footer = () => {
                 Copyright © {new Date().getFullYear()} - All right reserved by
                 SYLCARE Foundation LTD.
               </p>
-            </p>
+            </div>
           </aside>
           <nav>
             <h6 className="text-gray-600 text-lg font-bold uppercase mb-1">
               Social
             </h6>
             <div className="flex items-center gap-2">
-              <Link>
+              <Link to="https://www.facebook.com/sylcarefoundation.org">
                 <img className="w-12" src={facebook} alt="" />
               </Link>
-              <Link>
+              <Link to="https://www.instagram.com/sylcarefoundation.org.bd?igsh=YzljYTk1ODg3Zg%3D%3D">
                 <img className="w-12" src={instagram} alt="" />
               </Link>
               <Link>

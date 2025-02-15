@@ -1,3 +1,7 @@
+.active {
+  color: #9fdd3e;
+}
+
 @import "tailwindcss";
 @import "tailwindcss";
 @plugin "daisyui";

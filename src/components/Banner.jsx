@@ -10,10 +10,10 @@ const Banner = () => {
         There is a Great Value For <br /> Doing Good to Others
       </h1>
       <div className="flex items-center gap-4 mt-8">
-        <Link>
+        <Link to="https://www.facebook.com/sylcarefoundation.org">
           <img className="w-12" src={facebook} alt="" />
         </Link>
-        <Link>
+        <Link to="https://www.instagram.com/sylcarefoundation.org.bd?igsh=YzljYTk1ODg3Zg%3D%3D">
           <img className="w-12" src={instagram} alt="" />
         </Link>
         <Link>
