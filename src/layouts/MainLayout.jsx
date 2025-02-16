@@ -1,22 +1,26 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../pages/shared/Navbar";
 import Banner from "../components/Banner";
 import Footer from "../pages/shared/Footer";
 
 const MainLayout = () => {
+  const { pathname } = useLocation();
+
   return (
     <div>
       {/* Navbar */}
       <div
-        className="hero h-[600px]"
+        className={`${pathname === "/" && "h-[600px]"} hero`}
         style={{
           backgroundImage:
             "url(https://i.ibb.co.com/LfCqnvW/eco-concept-with-group-volunteers.jpg)",
         }}
       >
-        <div className="hero-overlay">
+        <div
+          className={`${pathname !== "/" && "bg-white shadow-lg"} hero-overlay`}
+        >
           <Navbar></Navbar>
-          <Banner></Banner>
+          {pathname === "/" && <Banner></Banner>}
         </div>
       </div>
       {/* Outlet */}

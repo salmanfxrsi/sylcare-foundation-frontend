@@ -1,6 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
+
   const links = (
     <>
       <NavLink to="/">Home</NavLink>
@@ -9,7 +11,11 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar w-11/12 lg:container mx-auto text-white mt-1">
+    <div
+      className={`${
+        pathname === "/" ? "text-white" : "text-black"
+      } navbar w-11/12 lg:container mx-auto mt-1`}
+    >
       <div className="flex-1">
         <Link to="/" className="font-black lg:text-2xl uppercase">
           SYLCARE Foundation
