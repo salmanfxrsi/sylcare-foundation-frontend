@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-linear-to-b from-white to-[#9FDD3E] pb-4">
+      <div className="bg-white shadow-2xl pb-4">
         <footer className="footer sm:footer-horizontal text-gray-600 p-10 container mx-auto">
           <aside>
             <img className="w-16" src="/favicon.png" alt="" />
