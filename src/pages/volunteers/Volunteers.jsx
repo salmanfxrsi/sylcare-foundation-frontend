@@ -7,9 +7,12 @@ const Volunteers = () => {
   if (isLoading) return;
 
   return (
-    <div>
+    <div className="py-20">
+      <h1 className="text-4xl uppercase mb-16 text-center font-semibold">
+        ---Our Volunteers---
+      </h1>
       {/* Volunteer Showcase */}
-      <div className="w-11/12 lg:container mx-auto py-24 flex justify-center">
+      <div className="w-11/12 lg:container mx-auto flex justify-center">
         <VolunteersShowcase volunteers={volunteers}></VolunteersShowcase>
       </div>
     </div>
